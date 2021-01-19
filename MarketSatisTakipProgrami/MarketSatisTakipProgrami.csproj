@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4EAEA94-7C37-4251-8E1F-616145D5B0CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MarketSatisTakipProgrami</RootNamespace>
+    <AssemblyName>MarketSatisTakipProgrami</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GirisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisSayfasi.Designer.cs">
+      <DependentUpon>GirisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokİslemleriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokİslemleriEkle.Designer.cs">
+      <DependentUpon>StokİslemleriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satisİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satisİslemleri.Designer.cs">
+      <DependentUpon>Satisİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Müsteriİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Müsteriİslemleri.Designer.cs">
+      <DependentUpon>Müsteriİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüsteriİslemleriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüsteriİslemleriEkle.Designer.cs">
+      <DependentUpon>MüsteriİslemleriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Urunİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urunİslemleri.Designer.cs">
+      <DependentUpon>Urunİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunİslemleriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunİslemleriEkle.Designer.cs">
+      <DependentUpon>UrunİslemleriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasiyerİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasiyerİslemleri.Designer.cs">
+      <DependentUpon>Kasiyerİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasiyerİslemleriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasiyerİslemleriEkle.Designer.cs">
+      <DependentUpon>KasiyerİslemleriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stokİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stokİslemleri.Designer.cs">
+      <DependentUpon>Stokİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MarketSatisTakipProgramiDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarketSatisTakipProgramiDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GirisSayfasi.resx">
+      <DependentUpon>GirisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokİslemleriEkle.resx">
+      <DependentUpon>StokİslemleriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satisİslemleri.resx">
+      <DependentUpon>Satisİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Müsteriİslemleri.resx">
+      <DependentUpon>Müsteriİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüsteriİslemleriEkle.resx">
+      <DependentUpon>MüsteriİslemleriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urunİslemleri.resx">
+      <DependentUpon>Urunİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunİslemleriEkle.resx">
+      <DependentUpon>UrunİslemleriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasiyerİslemleri.resx">
+      <DependentUpon>Kasiyerİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasiyerİslemleriEkle.resx">
+      <DependentUpon>KasiyerİslemleriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stokİslemleri.resx">
+      <DependentUpon>Stokİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MarketSatisTakipProgramiDataSet.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet1.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet1.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet10.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet10.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet11.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet11.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet12.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet12.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet2.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet2.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet3.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet3.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet4.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet4.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet5.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet5.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet6.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet6.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet7.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet7.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet8.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet8.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet9.xsc">
+      <DependentUpon>MarketSatisTakipProgramiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarketSatisTakipProgramiDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarketSatisTakipProgramiDataSet9.xss">
+      <DependentUpon>MarketSatisTakipProgramiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
